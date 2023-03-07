@@ -1,0 +1,30 @@
+.feat {
+  h2 {
+    text-align: center;
+    color: $fontColor;
+    margin-bottom: 50px;
+    font-weight: bold;
+  }
+  .box {
+    padding-top: 30px;
+    svg {
+      padding: 20px;
+      color: #fff;
+      background-color: $secondColor;
+      border-radius: 50%;
+      @media (min-width:992px) {
+        & {
+          margin-right: 15px;
+        }
+      }
+    }
+    h4 {
+      color: $fontColor;
+      font-weight: bold;
+    }
+    p {
+      margin: 0;
+      color: $paragraphColor;
+    }
+  }
+}

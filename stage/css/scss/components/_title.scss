@@ -1,0 +1,32 @@
+.title {
+  box-shadow: 0 10px 15px #ccc inset;
+  img {
+    width: 250px;
+  }
+  .text {
+    color: $paragraphColor;
+    h1 {
+      color: $fontColor;
+      span {
+        font-weight: bold;
+      }
+    }
+    p {
+      line-height: 1.7;
+    }
+  }
+  ul {
+    li {
+      position: relative;
+      margin-bottom: 10px;
+      &::before {
+        font-family: "Font awesome 6 Free"; 
+        content: "\f00c";
+        font-weight: 900;
+        position: absolute;
+        left: -30px;
+        color: green;
+      }
+    }
+  }
+}

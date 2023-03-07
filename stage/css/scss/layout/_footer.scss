@@ -1,0 +1,31 @@
+.footer {
+  background-color: $mainColor;
+  color: $fontColor;
+  box-shadow: 0 10px 15px #999 inset;
+  position: relative;
+  overflow: hidden;
+  .box {
+    svg {
+      padding: 5px 12px;
+    }
+    ul {
+      li {
+        margin-bottom: 10px;
+      }
+      @media (max-width: 767px) {
+        & {
+          list-style: none;
+        }
+      }
+    }
+    @media (max-width: 767px) {
+      & {
+        text-align: center;
+      }
+    }
+  }
+  .clouds {
+    top: -60px !important;
+    z-index: 0 !important;
+  }
+}

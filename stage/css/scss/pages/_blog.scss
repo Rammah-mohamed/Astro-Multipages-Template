@@ -1,0 +1,11 @@
+.blog-page {
+  position: relative;
+  overflow: hidden;
+    .clouds {
+      z-index: 0;
+      top: -160px;
+    }
+  .content {
+    box-shadow: 0 10px 15px #ccc inset;
+  }
+}

@@ -1,0 +1,44 @@
+.table {
+  overflow-x: scroll;
+  table {
+    width: 100%;
+    font-size: 18px;
+    @media (max-width:767px) {
+      & {
+        font-size: 14px;
+      }
+    }
+    thead {
+      position: relative;
+      top: -10px;
+      th {
+        color: $secondColor;
+        padding: 10px 20px;
+        font-weight: bold;
+        outline: 2px solid #ddd;
+        border-style: none;
+        @media (max-width:767px) {
+          & {
+            padding: 8px 12px;
+          }
+        }
+      }
+    }
+    tr {
+      border-style: none;
+      td {
+        color: $paragraphColor;
+        padding: 10px 20px;
+        outline: 2px solid #ddd;
+        @media (max-width:767px) {
+          & {
+            padding: 8px 12px;
+          }
+        }
+        svg {
+          color: #4caf50;;
+        }
+      }
+    }
+  }
+}

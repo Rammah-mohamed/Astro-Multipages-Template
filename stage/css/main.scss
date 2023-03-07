@@ -1,0 +1,36 @@
+// Import Helpers 
+@import "scss/helpers/variables";
+
+// Import layout
+@import "scss/layout/global";
+@import "scss/layout/header";
+@import "scss/layout/footer";
+
+//Import Components
+@import "scss/components/heading";
+@import "scss/components/clouds";
+@import "scss/components/button";
+@import "scss/components/head";
+@import "scss/components/features";
+@import "scss/components/card";
+@import "scss/components/title";
+@import "scss/components/table";
+@import "scss/components/pricing-Box";
+@import "scss/components/domain-picker";
+@import "scss/components/blog";
+@import "scss/components/sideBar";
+
+//import dashboard
+@import "scss/pages/home";
+//import Services
+@import "scss/pages/services";
+//import About
+@import "scss/pages/about";
+//import Pricing
+@import "scss/pages/pricing";
+//import Domain
+@import "scss/pages/domain";
+//import Blog
+@import "scss/pages/blog";
+//import Blog
+@import "scss/pages/contact";

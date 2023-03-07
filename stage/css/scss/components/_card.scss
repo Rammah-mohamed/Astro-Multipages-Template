@@ -1,0 +1,18 @@
+.card {
+  width: 250px;
+  text-align: center;
+  border-radius: 10px;
+  border: 2px solid #ccc;
+  overflow: hidden;
+  .info {
+    padding: 20px;
+    h4 {
+      color: $fontColor;
+      font-weight: bold;
+    }
+    p {
+      color: $paragraphColor;
+      font-size: 14px;
+    }
+  }
+}

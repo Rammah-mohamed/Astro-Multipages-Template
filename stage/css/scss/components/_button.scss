@@ -1,0 +1,10 @@
+.btn {
+  border: none;
+  padding: 8px 15px;
+  color: #fff;
+  background-color: $secondColor;
+  &:hover {
+    background-color: $secondColor;
+    color: #fff;
+  }
+}

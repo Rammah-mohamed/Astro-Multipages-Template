@@ -1,0 +1,21 @@
+.pricing-page {
+  position: relative;
+  overflow: hidden;
+  .cloud-box {
+    height: 0;
+    top: 200px;
+    .clouds {
+      z-index: 0;
+      width: 120%;
+    }
+  }
+  .title {
+    padding: 100px 0;
+  }
+  .package {
+    box-shadow: 0 10px 15px #ccc inset;
+  }
+  .feat-compare {
+    box-shadow: 0 10px 15px #ccc inset;
+  }
+} 

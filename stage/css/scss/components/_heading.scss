@@ -1,0 +1,19 @@
+.heading {
+  text-align: center;
+  margin-bottom: 80px;
+  h2 {
+    color: $fontColor;
+    margin-bottom: 15px;
+    font-weight: bold;
+  }
+  p {
+    color: $paragraphColor;
+    max-width: 800px;
+    margin: auto;
+    @media (max-width: 767px) {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+}

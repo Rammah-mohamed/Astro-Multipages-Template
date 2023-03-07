@@ -1,0 +1,54 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    include pug/layouts/styles
+    title Astro
+  body 
+    .pricing-page
+      include pug/layouts/header
+      .nav-bar
+        .container
+          .row
+            .col-12.col-md-4.col-lg-3.p-3
+              a: img(class="img-fluid w-50" src="../dist/imgs/logo.png", alt="", class="logo")
+            .col-12.col-md-8.col-lg-6
+              ul(class="links list-unstyled h-100 d-flex m-0 justify-content-center")
+                li(class = "text-uppercase" data-page=".home-page"): a(href="../dist/Home.html" class="p-3") Home
+                li(class = "text-uppercase" data-page=".services-page"): a(href="../dist/services.html" class="p-3") Services
+                li(class = "text-uppercase" data-page=".about-page"): a(href="../dist/about.html" class="p-3") About
+                li(class = "active text-uppercase" data-page=".pricing-page"): a(href="../dist/pricing.html" class="p-3") Pricing
+                li(class = "text-uppercase" data-page=".domain-page"): a(href="../dist/domain.html" class="p-3") Domain
+                li(class = "text-uppercase" data-page=".blog-page"): a(href="../dist/blog.html" class="p-3") Blog
+                li(class = "text-uppercase" data-page=".contact-page"): a(href="../dist/Contact.html" class="p-3") Contact
+            .col-12.col-lg-3.p-3
+              form
+                input(type="text" placeholder="Search")
+                i(class="fa-solid fa-magnifying-glass")
+      .head.text-center
+        .container
+          h2 Our pricing
+          p Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin.
+      .cloud-box
+        img(src="../dist/imgs/clouds.png", alt="", class="clouds")
+      include pug/components/title
+      .package(class="pt-5 pb-5")
+        .heading
+          h2 Our Packages
+          p Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin.
+        include pug/components/pricing
+      .feat-compare(class="pt-5 pb-5")
+        .container(class="pt-5 pb-5")
+          .heading
+            h2 Feature Comparison
+          include pug/components/table
+        .contact(class="pt-5 pb-5 text-center")
+          .container
+            .heading.text-center
+              h2.mb-3 Feel free to contact us for custom plans
+              p.mb-5 Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Donec sollicitudin molue in ipsum
+            button.btn Contact Us
+    include pug/layouts/footer
+    include pug/layouts/scripts

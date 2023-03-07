@@ -1,0 +1,53 @@
+.blog {
+  width: 98%;
+  .img-box{
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+    @media (max-width: 575px) {
+      & {
+        width: 97%;
+      }
+    }
+  }
+  .caption {
+    h4 {
+      color: $fontColor;
+    }
+    .info {
+      .date, .auther, .comment {
+        display: inline-block;
+        margin-right: 20px;
+        svg {
+          color: $secondColor;
+          margin-right: 10px;
+        }
+        span {
+          color: $paragraphColor;
+        }
+        @media (max-width: 991px) {
+          & {
+            font-size: 14px;
+          }
+        }
+      }
+      @media (max-width: 991px) {
+        .comment {
+          width: 100px;
+        }
+      }
+      .date {
+        margin-right: 50px;
+      }
+    }
+  }
+  p {
+    color: $paragraphColor;
+    line-height: 1.7;
+    @media (max-width: 991px) {
+      & {
+        font-size: 14px;
+      }
+    }
+  }
+}

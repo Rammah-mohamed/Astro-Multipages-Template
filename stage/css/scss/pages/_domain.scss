@@ -1,0 +1,25 @@
+.domain-page {
+  position: relative;
+  overflow: hidden;
+    .clouds {
+      z-index: 0;
+      top: -160px;
+    }
+  .domain {
+    box-shadow: 0 10px 15px #ccc inset;
+    table {
+      .cross {
+        color: #c62828;
+      }
+    }
+  }
+  .package {
+    box-shadow: 0 10px 15px #ccc inset;
+  }
+  .feature-compare {
+    box-shadow: 0 10px 15px #ccc inset;
+  }
+  .contact {
+    box-shadow: 0 10px 15px #ccc inset;
+  }
+}

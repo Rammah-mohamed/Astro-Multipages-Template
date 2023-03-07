@@ -1,0 +1,17 @@
+.cloud-box {
+  width: 100%;
+  position: absolute;
+  left: -80px;
+  @media(max-width: 991px) {
+    & {
+      display: none;
+    }
+  }
+  .clouds {
+    position: relative;
+    top: 0;
+    max-width: 120%;
+    left: -20px;
+    z-index: -3;
+  }
+}

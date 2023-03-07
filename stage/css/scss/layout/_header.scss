@@ -1,0 +1,144 @@
+.upper-bar {
+  background-color: $mainColor;
+  color: $fontColor;
+  height: 50px;
+  @media (max-width: 991px) {
+    & {
+      height: 80px;
+    }
+  }
+  @media (max-width: 767px) {
+    & {
+      text-align: center;
+      height: 120px;
+    }
+  }
+  select {
+    background-color: $mainColor;
+    color: $fontColor;
+    padding: 15px;
+    cursor: pointer;
+    user-select: none;
+    option {
+      margin-bottom: 10px;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+}
+.nav-bar {
+  height: 70px;
+  background-color: $greyColor;
+  text-align: center;
+  @media (max-width: 991px) {
+    & {
+      height: 150px;
+    }
+  }
+  .logo {
+    @media (min-width: 768px) and (max-width: 991px){
+      & {
+        width: 100% !important;
+      }
+    }
+    @media (max-width: 767px) {
+      & {
+        width: 30% !important;
+      }
+    }
+  }
+  .links {
+    li {
+      cursor: pointer;
+      user-select: none;
+      height: 93%;
+      line-height: 1.8;
+      @media (max-width: 1199px) {
+        & {
+          line-height: 2.8;
+        }
+      }
+      &.active {
+        border-top: 4px solid $secondColor;
+        background-image: linear-gradient(to bottom, #eff3f7, #fff);
+      }
+      a {
+        text-decoration: none;
+        color: $fontColor;
+        width: 100%;
+        height: 100%;
+        display: block;
+        @media (max-width: 1199px) {
+          & {
+            padding: 12px !important;
+            font-size: 14px;
+          }
+        }
+        @media (min-width: 576px) and (max-width: 767px) {
+          & {
+            padding: 14px !important;
+            font-size: 14px;
+          }
+        }
+        @media (max-width: 576px) {
+          & {
+            padding: 8px !important;
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+  form {
+    position: relative;
+    input {
+      padding: 8px 10px;
+      border-radius: 6px;
+      border: 2px solid #ddd;
+      @media (max-width: 1199px) {
+        & {
+          padding: 8px !important;
+          font-size: 13px;
+        }
+      }
+      @media (max-width: 991px) {
+        & {
+          display: flex;
+          width: 50%;
+          margin-left: auto;
+          margin-top: -15px;
+        }
+      }
+      @media (max-width: 767px) {
+        & {
+          display: none;
+          padding: 0;
+        }
+      }
+      &::placeholder {
+        color: $fontColor;
+      }
+      &:focus {
+        outline: none;
+      }
+    }
+    svg {
+      color: $fontColor;
+      position: absolute;
+      top: 35%;
+      right: 60px;
+      @media (max-width: 1199px) {
+        & {
+          top: 30%;
+          right: 40px;
+        }
+      }
+      @media (max-width: 767px) {
+        & {
+          display: none;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,62 @@
+.about-page {
+  position: relative;
+  overflow: hidden;
+    .clouds {
+      z-index: 0;
+      top: -150px;
+    }
+  .features {
+    box-shadow: 0 10px 15px #ccc inset;
+    h2 {
+      text-align: center;
+      color: $fontColor;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+    .box {
+      padding-top: 30px;
+      svg {
+        padding: 20px;
+        color: #fff;
+        background-color: $secondColor;
+        border-radius: 50%;
+        @media (max-width: 992px) {
+          & {
+            margin-right: 15px;
+          }
+        }
+      }
+      h4 {
+        color: $fontColor;
+        font-weight: bold;
+      }
+      p {
+        margin: 0;
+        color: $paragraphColor;
+      }
+    }
+  }
+  .team {
+    box-shadow: 0 10px 15px #ccc inset;
+    h2 {
+      text-align: center;
+      color: $fontColor;
+      font-weight: bold;
+      margin-bottom: 50px;
+    }
+  }
+  .company {
+    box-shadow: 0 10px 15px #ccc inset;
+    .img-box {
+      text-align: center;
+      width: 80%;
+      overflow: hidden;
+      border-radius: 10px;
+      margin: auto;
+    }
+    .content {
+      color: $paragraphColor;
+      line-height: 1.7;
+    }
+  }
+}

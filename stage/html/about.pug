@@ -1,0 +1,93 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    include pug/layouts/styles
+    title Astro
+  body
+    .about-page
+      include pug/layouts/header
+      .nav-bar
+        .container
+          .row
+            .col-12.col-md-4.col-lg-3.p-3
+              a: img(class="img-fluid w-50" src="../dist/imgs/logo.png", alt="", class="logo")
+            .col-12.col-md-8.col-lg-6
+              ul(class="links list-unstyled h-100 d-flex m-0 justify-content-center")
+                li(class = "text-uppercase" data-page=".home-page"): a(href="../dist/Home.html" class="p-3") Home
+                li(class = "text-uppercase" data-page=".services-page"): a(href="../dist/services.html" class="p-3") Services
+                li(class = "active text-uppercase" data-page=".about-page"): a(href="../dist/about.html" class="p-3") About
+                li(class = "text-uppercase" data-page=".pricing-page"): a(href="../dist/pricing.html" class="p-3") Pricing
+                li(class = "text-uppercase" data-page=".domain-page"): a(href="../dist/domain.html" class="p-3") Domain
+                li(class = "text-uppercase" data-page=".blog-page"): a(href="../dist/blog.html" class="p-3") Blog
+                li(class = "text-uppercase" data-page=".contact-page"): a(href="../dist/Contact.html" class="p-3") Contact
+            .col-12.col-lg-3.p-3
+              form
+                input(type="text" placeholder="Search")
+                i(class="fa-solid fa-magnifying-glass")
+      .head.text-center(class="pt-5 pb-5")
+        .container
+          h2 About Us
+          p Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin.
+      .cloud-box
+        img(src="../dist/imgs/clouds.png", alt="", class="clouds")
+      include pug/components/title
+      .features(class="pt-5 pb-5")
+        h2 What We Do
+        include pug/components/features
+        .new-feat(class="text-center text-lg-start")
+          .container
+            .row
+                .col-12.col-lg-4.mb-5
+                  .box(class="d-flex align-items-center justify-content-center flex-column flex-lg-row")
+                    i(class="fa-solid fa-clock fa-2x mb-3")
+                    .text
+                      h4 Daily Backups
+                      p Curabitur aliquet quam id dui posu ere blandit.Curabitur ae blandit
+                .col-12.col-lg-4.mb-5
+                  .box(class="d-flex align-items-center justify-content-center flex-column flex-lg-row")
+                    i(class="fa-solid fa-rocket fa-2x mb-3")
+                    .text
+                      h4 Best Prices
+                      p Curabitur aliquet quam id dui posu ere blandit.Curabitur ae blandit
+                .col-12.col-lg-4.mb-5
+                  .box(class="d-flex align-items-center justify-content-center flex-column flex-lg-row")
+                    i(class="fa-solid fa-tag fa-2x mb-3")
+                    .text
+                      h4 Fast Servers
+                      p Curabitur aliquet quam id dui posu ere blandit.Curabitur ae blandit
+      .team(class="pt-5 pb-5 text-center")
+        .container(class="pt-5 pb-5")
+          h2 The Team
+          .row
+            .col-12.col-md-6.col-xl-3.mb-5
+              .box.d-flex.justify-content-center
+                include pug/components/card
+            .col-12.col-md-6.col-xl-3.mb-5
+              .box.d-flex.justify-content-center
+                include pug/components/card
+            .col-12.col-md-6.col-xl-3.mb-5
+              .box.d-flex.justify-content-center
+                include pug/components/card
+            .col-12.col-md-6.col-xl-3.mb-5
+              .box.d-flex.justify-content-center
+                include pug/components/card
+      .company(class="pt-5 pb-5")
+        .container(class="pt-5 pb-5")
+          .heading
+            h2 Our Company
+            p Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus. Donec sollicitudin molestie malesuada. Donec sollicitudin molue in ipsum
+          .row
+            .col-12.col-lg-6.mb-5
+              .img-box
+                img(src="../dist/imgs/blog.jpg", alt="" class="img-fluid")
+            .col-12.col-lg-6.mb-5
+              .content
+                p Curabitur non nulla sit amet nisl tempus convallis quis ac lectus. Nulla quis lorem ut libero malesuada feugiat. Pellentesque in ipsum id orci porta dapibus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum ac diam sit amet quam vehicula elementum sed sit am.
+                p Suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.orem ipsum dolor si.
+                p Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lac inia eget consectetur sed, convallis at tellus.
+                p Suscipit tortor eget felis porttitor volutpat. Quisque velit nisi, pretium ut lacinia in, elementum id enim. Vivamus magna justo, lacinia eget consectetur sed, convallis at tellus.orem ipsum dolor si. 
+      include pug/layouts/footer
+    include pug/layouts/scripts

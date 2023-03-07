@@ -1,0 +1,77 @@
+.pricing-box {
+  text-align: center;
+  .box {
+    .plan {
+      position: relative;
+      top: 40px;
+      z-index: 1;
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      outline: 15px solid #fff;
+      background-color: $secondColor;
+      color: #fff;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .txt {
+        h5 {
+          font-size: 18px;
+          margin:15px 0 0;
+        }
+        span:first-of-type {
+          display: block;
+          font-size: 18px;
+        }
+        span:last-of-type {
+          display: block;
+          font-size: 14px;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .info {
+      .top {
+        position: relative;
+        background-color: $secondColor;
+        border-radius: 10px;
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+        height: 150px;
+        img {
+          position: absolute;
+          bottom: 0;
+          left: 50%;
+          transform: translateX(-50%);
+          max-width: 120px;
+        }
+      }
+      .bottom {
+        padding: 20px;
+        border: 2px solid #ddd;
+        border-top: 0;
+        border-bottom-right-radius: 10px;
+        border-bottom-left-radius: 10px;
+        li {
+          position: relative;
+          color: $paragraphColor;
+          margin-bottom: 10px;
+          &::before {
+            font-family: "Font awesome 6 Free"; 
+            content: "\f00c";
+            font-weight: 900;
+            position: absolute;
+            left: 20px;
+            color: green;
+            @media (min-width: 1200px) {
+              & {
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
